@@ -1,1 +1,57 @@
-h1{color: red;}
+body{
+    background-color: rgb(143, 143, 143);
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.topnav{
+    padding-top: 12px;
+}
+.topnav>nav{
+    padding-top: 4px;
+    padding-bottom: 5px;
+}
+.topnav>nav>ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.topnav>nav>ul>li{
+    float: left;
+    margin-left: 17px;
+    margin-right: 17px;
+}
+.topnav>nav>ul>li>a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+}
+.topnav>nav>ul>li>a:hover{
+    border-bottom: 3px solid red;
+}
+.topnav .logo{
+    font-size: 40px;
+    font-family: "隶书";
+    padding-top: 4px;
+    padding-bottom: 5px;
+}
+.topnav .logo .rs{
+    margin-right: 5px;
+    color: rgb(255, 241, 117);
+}
+.topnav .logo .card{
+    
+    color: rgb(255, 255, 255);
+}
