@@ -15,7 +15,6 @@
             <span class="card">我的阳</span>
         </a>
         <nav style="float: right;">
-            
             <ul class="clearfix">
                 <li>
                     <a href="#">苟泽阳艳照</a>
@@ -38,58 +37,22 @@
                 </li>
             </ul>
             </nav>
-        </div>
-    <div class="banner" style="background-image: url(#);"></div>
-    <form action="user?zzz=3" method="POST" target="aaa">
-        <label for="uesrname">用户名</label><input type="text" name="ligao" id="uesrname">
-        <label for="password">密码</label><input type="password" name="yugui" id=password>
-        
-        <label><input type="checkbox" name="quedingma" value="shifouqueding">联系技师加钟</label>
-        <label><input type="checkbox" name="quedingma" value="zhendema">召唤头牌泽阳</label>
-        <label><input type="checkbox" name="quedingma" value="chongfuxunwen">泽阳女装</label>
-        <label><input type="checkbox" name="quedingma" value="chongfuxunwen">扑倒他</label>
-        
-        <label><input name="xuanze" type="radio" value="yes">穿衣服</label>
-        <label><input name="xuanze" type="radio" value="no">不穿衣服</label>
-        <select name="分组" multiple>
-            <option value="">-</option>
-            <option value="1">第一组</option>
-            <option value="2">第二组</option>
-            <option value="3" disabled>第三组</option>
-            <option value="4">第四组</option>
-        </select>
-        <input type="button" value="button">
-        <hr>
-        <textarea style="resize: none; width: 300px; height: 150px; name="爱好"></textarea>
-        <input type="button" value="button">
-
-
-    </form>
-    <table border=1>
-        <thead>
-            <tr>
-                <th></th><th>姓名</th><th>班级</th><th>分数</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th>平均分</th><td>1</td><td>2</td><td>3</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <th>总分</th><td>10</td><td>20</td><td>30</td>
-            </tr>
-        </tfoot>
-    </table>
+      </div>
+    <div class="banner">
+       <div class="mask"></div>
+    </div>
+    
     <main>
-        <div class="card">
+        <div class="userCard">
+            <div class="pictureAndText clearfix">
         <div class="picture">
-            <img src="#" alt="头像">
+            <img src="./img/头像.jpg" alt="头像">
         </div>
         <div class="text">
             <div class="profile">
-             <span class="welcome">拒绝低俗网页</span>
+             <span class="welcome">拒绝低俗网页
+                 <span class="triangle"></span>
+             </span>
              <h1>田所浩二</h1>
              <p>日光浴红茶健身爱好者</p>
              <hr>
@@ -103,7 +66,7 @@
                  <dt>电话</dt>
                  <dd>114514</dd>
                </dl>
-         </div>
+            </div>
         <footer class="media">
             <a href="#"><img src="#" alt="123"></a>
             <a href="#"><img src="#" alt="123"></a>
@@ -115,6 +78,7 @@
          </footer>
          </div>
         </div>
+    </div>
         
         <a class="button" href="#">下载PDF简历</a>
         <p>
@@ -166,7 +130,49 @@
        <strong>我是你爹！！！！！</strong>
        <b>苟泽阳，说你呢</b>
        </p>
+       <form action="user?zzz=3" method="POST" target="aaa">
+        <label for="uesrname">用户名</label><input type="text" name="ligao" id="uesrname">
+        <label for="password">密码</label><input type="password" name="yugui" id=password>
+        
+        <label><input type="checkbox" name="quedingma" value="shifouqueding">联系技师加钟</label>
+        <label><input type="checkbox" name="quedingma" value="zhendema">召唤头牌泽阳</label>
+        <label><input type="checkbox" name="quedingma" value="chongfuxunwen">泽阳女装</label>
+        <label><input type="checkbox" name="quedingma" value="chongfuxunwen">扑倒他</label>
+        
+        <label><input name="xuanze" type="radio" value="yes">穿衣服</label>
+        <label><input name="xuanze" type="radio" value="no">不穿衣服</label>
+        <select name="分组" multiple>
+            <option value="">-</option>
+            <option value="1">第一组</option>
+            <option value="2">第二组</option>
+            <option value="3" disabled>第三组</option>
+            <option value="4">第四组</option>
+        </select>
+        <input type="button" value="button">
+        <hr>
+        <textarea style="resize: none; width: 300px; height: 150px; name="爱好"></textarea>
+        <input type="button" value="button">
 
+
+    </form>
+    <table border=1>
+        <thead>
+            <tr>
+                <th></th><th>姓名</th><th>班级</th><th>分数</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>平均分</th><td>1</td><td>2</td><td>3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>总分</th><td>10</td><td>20</td><td>30</td>
+            </tr>
+        </tfoot>
+    </table>
+    
        <iframe src="http://qq.com" frameborder="0"></iframe>
 </body>
 </html>
