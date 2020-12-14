@@ -6,6 +6,15 @@ a{
     color: inherit;
     text-decoration: none;
 }
+*{
+    margin: 0;
+    padding: 0;
+}
+hr{
+    height: 0;
+    border: none;
+    border-top: 1px solid #dedede;
+}
 .clearfix::after{
     content: '';
     display: block;
@@ -43,6 +52,7 @@ a{
     padding-top: 10px;
     padding-bottom: 10px;
     display: block;
+    font-family: "黑体";
 }
 .topnav>nav>ul>li>a:hover{
     border-bottom: 3px solid red;
@@ -52,14 +62,15 @@ a{
     font-family: "隶书";
     padding-top: 4px;
     padding-bottom: 5px;
+    margin: 0px 30px;
 }
 .topnav .logo .rs{
-    margin-right: 5px;
-    color: rgb(255, 241, 117);
+    
+    color: rgb(255, 230, 0);
 }
 .topnav .logo .card{
     
-    color: rgb(255, 255, 255);
+    color: rgb(255, 140, 32);
 }
 .banner{
     height: 520px;
@@ -86,6 +97,7 @@ a{
     line-height: 22px;
     position: relative;
     margin-bottom: 10px;
+    font-family: "仿宋";
 }
 .userCard .welcome .triangle{
     display: block;
@@ -101,10 +113,52 @@ a{
    float: left;
 }
 .userCard .text{
+    font-family: "华文新魏";
    margin-left: 50px;
    float: left;
    width: 470px;
 }
+.userCard .text h1{
+    margin-top: 16px;
+}
+.userCard .text hr{
+    margin: 20px 0;
+}
+
 .userCard .pictureAndText{
     padding: 50px;
+}
+.userCard dl dt,
+.userCard dl dd{
+    float: left;
+    padding: 5px 0;
+}
+.userCard dl dt{
+    width: 30%;
+    font-weight: bold;
+}
+.userCard dl dd{
+    width: 70%;
+    color: #9da0a7;
+}
+.userCard>footer.media{
+    background-color: rgb(172, 126, 126);
+    text-align: center;
+}
+.userCard>footer.media > a{
+    
+    display: inline-block;
+    line-height: 30px;
+    padding: 5px 5px;
+    border-radius: 50%;
+    margin: 16px 16px;
+}
+.userCard>footer.media > a:hover{
+    background: #cf5d5f;
+}
+.userCard svg{
+    width: 30px;
+    height: 30px;
+    fill: white;
+    vertical-align: top;
 }
