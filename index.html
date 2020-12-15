@@ -117,42 +117,119 @@
             </a>
           </footer>
     </div>
+        <p class="downloadResume-wrapper">
+          <a class="downloadResume" href="./resume.pdf" target="_blank"download>下载PDF简历</a>
+        </p>
     
-        <a class="button" href="#">下载PDF简历</a>
-        <p>
-            田所浩二，又称野兽先辈，著名哲学家，资深哲学影视人，东亚钙片文化奠基人。 <br>
-            代表作：仲夏夜之淫梦，野球部先辈狂化等。
+        <p class="selfIntroduction">
+            野獣先輩（やじゅうせんぱい）角色名「田所」、「鈴木」，「田所」只是野兽先辈在㚻片《BABYLON STAGE 34 真夏の夜の淫夢 the IMP》第四章「昏睡レイプ！野獣と化した先輩」中使用的角色名。因在新闻中出现的同姓嫌疑人，也叫作田所浩二（たどころこうじ、浩治）。 著名哲学家，资深哲学影视人，东亚钙片文化奠基人。代表作：仲夏夜之淫梦，野球部先辈狂化等。
         </p>
     </main>
-    <section>
+    
+    <section class="skills">
         <h2>技能</h2>
-        <ol>
-            <li>雷普后辈</li>
-            <li>无能狂怒</li>
-            <li>张口闭眼</li>
-            <li>昏睡红茶</li>
-            <li>先辈狂化</li>
-            <li>二人幸终</li>
-        </ol>
+         <ol class="clearfix">
+             <li>
+                <h3>
+                    雷普后辈
+                </h3> 
+                <div class="progressBar">
+                    <div class="progress" style="width: 95%;"></div>
+                </div>
+             </li>
+             <li>
+                <h3>
+                    二人幸终
+                </h3> 
+                <div class="progressBar">
+                    <div class="progress" style="width: 55%;"></div>
+                </div>
+             </li>
+             <li>
+                <h3>
+                    张口闭眼
+                </h3> 
+                <div class="progressBar">
+                    <div class="progress" style="width: 95%;"></div>
+                </div>
+             </li>
+             <li>
+                <h3>
+                    昏睡红茶
+                </h3> 
+                <div class="progressBar">
+                    <div class="progress" style="width: 95%;"></div>
+                </div>
+             </li>
+             <li>
+                <h3>
+                    狂化の先辈
+                </h3> 
+                <div class="progressBar">
+                    <div class="progress" style="width: 35%;"></div>
+                </div>
+             </li>
+             <li>
+                <h3>
+                    一转攻势
+                </h3> 
+                <div class="progressBar">
+                    <div class="progress" style="width: 65%;"></div>
+                </div>
+             </li>
+         </ol>
     </section>
-    <section>
+    
+    <section class="portfolio">
         <h2>作品集</h2>
         <nav>
-            <ol>
-                <li>所有作品</li>
-                <li>代表作</li>
-                <li>真夏夜之淫梦</li>
+            <ol class="clearfix">
+                <li id="portfolio1" class="por-btn" onclick="portfolio1">所有作品</li>
+                <li id="portfolio2" class="por-btn" onclick="portfolio2">代表作</li>
+                <li id="portfolio3" class="por-btn" onclick="portfolio3">真夏夜之淫梦</li>
             </ol>
-        </nav>
-        <div class="jobs">
-            <div class="big">
-
+            <div id="portfolioBar" class="bar state-1">
+                <div class="bar-inner"></div>
             </div>
-            <div class="small"></div>
-            <div class="small"></div>
+        </nav>
+        <script>
+            var portfolioBar = document.getElementById("portfolioBar")
+            var porBtn = document.querySelectorAll('.por-btn')
+            porBtn[0].onclick = function () {
+                console.log('432432')
+                portfolioBar.classList.remove("state-2")
+                portfolioBar.classList.remove("state-3")
+                portfolioBar.classList.add("state-1")
+            }
+            porBtn[1].onclick = function () {
+                console.log('432432')
+                portfolioBar.classList.remove("state-3")
+                portfolioBar.classList.remove("state-1")
+                portfolioBar.classList.add("state-2")
+            }
+            porBtn[2].onclick = function () {
+                console.log('432432')
+                portfolioBar.classList.remove("state-1")
+                portfolioBar.classList.remove("state-2")
+                portfolioBar.classList.add("state-3")
+            }
+        </script>
+        
+        <div class="works" style="height: 600px;">
+            <div class="big" style="top: 0; left: 0;">
+              <img src="./img/杰哥.jpg" alt="作品1">
+            </div>
+            <div class="small" style="top: 0; left: 645px;">
+                <img src="./img/魔法.jpg" alt="作品2">
+            </div>
+            <div class="small" style="top: 307px; left: 645px;">
+                <img src="./img/张口闭眼.jpg" alt="作品3">
+            </div>
 
         </div>
     </section>
+
+
 
     <div class="news">
         <h2>头部</h2>
@@ -188,7 +265,6 @@
         </select>
         <input type="button" value="button">
         <hr>
-        <textarea style="resize: none; width: 300px; height: 150px; name="爱好"></textarea>
         <input type="button" value="button">
 
 
@@ -211,6 +287,5 @@
         </tfoot>
     </table>
     
-       <iframe src="http://qq.com" frameborder="0"></iframe>
 </body>
 </html>
