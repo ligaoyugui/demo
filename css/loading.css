@@ -1,5 +1,5 @@
 .loading{
-    width: 200px;height: 200px;position: relative;}
+    width: 200px;height: 200px; position: relative;}
     .loading::before,.loading::after{
         content: '';
         position: absolute;

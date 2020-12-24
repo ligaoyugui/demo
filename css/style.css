@@ -57,11 +57,28 @@ h1,h2,h3,h4,h5,h6{
     border-bottom: 3px solid transparent;
     padding-top: 10px;
     padding-bottom: 10px;
-    display: block;
     font-family: "黑体";
+    display: block;
+    position: relative;
 }
-.topnav>nav>ul>li>a:hover{
-    border-bottom: 3px solid red;
+.topnav>nav>ul>li> a:hover::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #cf5d5f;
+    height: 3px;
+    animation: menuSlide 0.5s;
+}
+@keyframes menuSlide{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
 }
 .topnav .logo{
     font-size: 40px;
