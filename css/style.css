@@ -47,6 +47,7 @@ h1,h2,h3,h4,h5,h6{
     float: left;
     margin-left: 17px;
     margin-right: 17px;
+    position: relative;
 }
 .topnav>nav>ul>li>a{
     font-size: 14px;
@@ -73,12 +74,23 @@ h1,h2,h3,h4,h5,h6{
     animation: menuSlide 0.5s;
 }
 @keyframes menuSlide{
-    0%{
-        width: 0;
-    }
-    100%{
-        width: 100%;
-    }
+    0%{width: 0;}
+    100%{width: 100%;}
+}
+.topnav .submenu{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background: white;
+    color: #3d4451;
+}
+.topnav li.active> submenu.active{
+    display: block;
+}
+.topnav .submenu> li{
+    white-space: nowrap;
+    padding: 5px 10px;
 }
 .topnav .logo{
     font-size: 40px;
